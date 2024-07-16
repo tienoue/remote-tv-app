@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Teleco"
+        tools:targetApi="31">
+        <activity
+            android:name=".Radio"
+            android:exported="false"
+            android:parentActivityName=".IrActivity" />
+        <activity
+            android:name=".Baffle"
+            android:exported="false"
+            android:parentActivityName=".IrActivity" />
+        <activity
+            android:name=".Dvd"
+            android:exported="false"
+            android:parentActivityName=".IrActivity" />
+        <activity
+            android:name=".Projecteur"
+            android:exported="false"
+            android:parentActivityName=".IrActivity"/>
+        <activity
+            android:name=".Clim"
+            android:exported="false"
+            android:parentActivityName=".IrActivity" />
+        <activity
+            android:name=".SONY"
+            android:exported="false"
+            android:parentActivityName=".TVs" />
+        <activity
+            android:name=".SAMSUNG"
+            android:exported="false"
+            android:parentActivityName=".TVs" />
+        <activity
+            android:name=".TVs"
+            android:exported="false"
+            android:parentActivityName=".IrActivity" />
+        <activity
+            android:name=".BluetoothActivity"
+            android:exported="false"
+            android:parentActivityName=".Accueil" />
+        <activity
+            android:name=".WifiActivity"
+            android:exported="false"
+            android:parentActivityName=".Accueil" />
+        <activity
+            android:name=".IrActivity"
+            android:exported="false"
+            android:parentActivityName=".Accueil" />
+        <activity
+            android:name=".LG"
+            android:exported="false"
+            android:parentActivityName=".TVs" />
+        <activity
+            android:name=".Accueil"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
